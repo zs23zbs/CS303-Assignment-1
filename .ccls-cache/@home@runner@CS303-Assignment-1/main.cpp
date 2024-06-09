@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
 
-    ifstream input_file; // declare stream variable 
+    ifstream input_file; // declare stream variable
 
     input_file.open("A1input.txt"); // open the input file 
 
@@ -75,7 +75,7 @@ int main() {
             // Variables to check integer is in array 
             int search_val = 0;
 
-            cout << "Please enter an value to search for in array: ";
+            cout << "Please enter a value to search for in array: ";
             cin >> search_val;
 
             // Search for the integer in the array
@@ -86,7 +86,7 @@ int main() {
         else if (choice == 'C') {
             try {
                 int new_val = 0;
-                cout << "Please enter an value to add to the end of an array: ";
+                cout << "Please enter a value to add to the end of the array: ";
                 cin >> new_val;
 
                 addElement(array, arraySize, capacity, new_val);
@@ -109,7 +109,7 @@ int main() {
         else if (choice =='D') {
             try {
                 int del_val = 0;
-                cout << "Please enter an index to delete the value of in array: ";
+                cout << "Please enter a index to delete the value of in array: ";
                 cin >> del_val;
 
                 deleteElement(array, arraySize, del_val);
@@ -131,7 +131,7 @@ int main() {
             try {
                 int user_index = 0;
                 int user_val = 0; 
-                cout << "Please enter an index integer: ";
+                cout << "Please enter a index integer: ";
                 cin >> user_index;
 
                 cout << "\nPlease enter a new value to replace the old value: ";
