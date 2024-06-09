@@ -30,7 +30,7 @@ int addElement(int array[], int& num_items, int current_capacity, int val) {
         throw overflow_error("Capacity of array is full");
     }
 
-    // Insert the new item at the specified index
+    // Insert the new item at the end of the array
     array[num_items] = val;
     num_items++;
 
@@ -60,7 +60,7 @@ int deleteElement(int array[], int& num_items, int index) {
 
 int modifyElement(int array[], int& num_items, int index, int new_val) {
 
-    // Check if the index is valid
+    // validate the index
     if (index < 0 || index >= num_items) {
         throw out_of_range("Index to replace in array is out of range");
     }
@@ -76,7 +76,7 @@ int modifyElement(int array[], int& num_items, int index, int new_val) {
         array[index] = new_val;
     }
 
-    // Returnt the new value to the user
+    // Return the new value to the user
     cout << "The new value at index " << index << " is " << array[index] << endl;
 
 
